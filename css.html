@@ -98,5 +98,125 @@
                 <li>리스트1</li>
             </ul>
         </div>
+        <style>
+            .color_sample{
+                color:red;
+                color:#000; /*3자리 컬러코드, #rgb*/
+                color:#000000; /*6자리 컬러코드, #rrggbb*/
+                color:rgb(0,0,255); /* 0~255 */
+                color:rgb(0%,10%,100%) /* 0~100%*/
+            }
+        </style>
+        <div class="color_sample">색상 입력방법</div>
+
+
+        <style>
+            #block_target,#inline_target{
+                border: solid 1px black; /*경게선 : 실선 1px두께 검은선*/
+                width: 200px; /* 넓이 : 200px; */
+                height: 200px; /* 높이 : 200px; */
+                margin: 20px; /* 바깥여백 : 20px; */
+                padding: 30px; /* 안쪽여백 : 30px; */
+                /* margine-top 위쪽여백 */
+                /* top right bottom left */
+            }
+        </style>
+        <div id="block_target">block형 태그</div>
+        <span id="inline_target">inline형 태그</span>
+
+        <style>
+            #position_target{
+                position: static; /*기본형*/
+                /* 위치 : 정적인 */
+                /* relative 관계형 */
+                /* absolute 절대적인 */
+                /* fixed 고정된 */
+                position: fixed;
+                top: 50px;
+                left: 50px;
+                /* top right bottom left */
+            }
+        </style>
+        <div id="position_target">position 연습</div>
+
+        <style>
+            #font_target{
+                font-family: '나눔고딕 ExtraBold',dotum,sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                /* normal light bold bolder, 100, 200, 300, 400 */
+                /* 폰트에서 지원할 떄만 표현 됨 */
+                font-style: italic; /* 기울임체 */
+                font-variant: small-caps; /*작은 대문자 표기*/
+            }
+        </style>
+        <div id="font_target">
+            font 변경하기
+            AbcdEfgHiJKlmnOPq
+        </div>
+
+        <style>
+            #align_target{
+                text-align: center;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                text-decoration: underline;
+                /* none, underline, overline, line-through*/
+            }
+        </style>
+
+<div id="align_target">글자 정렬 방식</div>
+
+<style>
+        /*
+            baseline : 기준선에 정렬
+            top : 위쪽정렬
+            text-top : 위쪽정렬
+            middle : 중앙정렬
+            bottom : 하단정렬
+            text-bottom : 하단정렬
+        */
+        #table_target td{
+            width:150px;
+            height:150px;
+            border:solid 1px black;
+        }
+        #vartical_baseline{ vertical-align: baseline; }
+        #vartical_top{ vertical-align: top; }
+        #vartical_text_top{ vertical-align: text-top; }
+        #vartical_middle{ vertical-align: middle; }
+        #vertical_bottom{ vertical-align: bottom; }
+        #vertical_text_bottom{ vertical-align: text-bottom; }
+    </style>
+    <table id="table_target">
+        <tr>
+            <td id="vartical_baseline">top</td>
+            <td id="vartical_top">top</td>
+            <td id="vartical_text_top">text_top</td>
+            <td id="vartical_middle">middle</td>
+            <td id="vertical_bottom">bottom</td>
+            <td id="vertical_text_bottom">text_bottom</td>
+        </tr>
+    </table>
+    
+<style>
+    #space_target{
+        letter-spacing: 20px; /*글자 사이의 간격*/
+        line-height: 40px; /*줄의 높이*/
+        text-indent: 50px; /*첫줄 들여쓰기*/
+        text-transform: uppercase;
+        /* uppercase, lowercase, capitalize */
+        white-space: pre; /*공백 및 줄내림 모두 표현*/
+    }
+</style>
+    <div id="space_target">
+            AbcdEFghTyhf
+            “내 인생이 비극인줄 알았는데, 코미디였어”
+            고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자.
+             하지만 모두가 미쳐가는 코미디 같은 세상에서
+             맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데…
+             이제껏 본 적 없는 진짜 ‘조커’를 만나라!
+    </div>
     </body>
 </html>
