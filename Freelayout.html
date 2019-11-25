@@ -2,5 +2,254 @@
 <html>
    <head>
        <title>French Bulldog</title>
+       <meta charset="utf-8"/>
+       <style>
+           header{
+                padding: 20px 70px; /* 상하좌우 */
+            }
+           .float_left{ float: left;}
+           .float_right{ float: right;}
+           .clear{
+                clear: both; /* float을 해제한다 */
+                height: 0px; /* 높이 : 0px; */
+                overflow: hidden; /* 넘치면 : 숨김; */
+            }
+            header>ul{
+                padding: 0px; /* 안쪽여백 : 0px; */
+                margin: 20px
+            }
+            header>ul>li{
+                float: left; /* 둥둥떠다님 : 왼쪽기준*/
+                list-style: none; /*목록모양(왼쪽 동그라미): 없음; */
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px gray;
+            }
+            header>ul>li:nth-child(5){
+                border: none; /* 경계선 없음의 의미 */
+            }
+            nav{
+                background-color: #eee;
+                padding: 20px 70px;
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            nav>h2{
+                margin: 0px;
+            }
+            div>section:nth-child(1){
+                background-color: red;
+            }
+            div>section:nth-child(2){
+                background-color: pink;
+            }
+            div>section:nth-child(3){
+                background-color: orange;
+            }
+            div>section:nth-child(4){
+                background-color: skyblue;
+            }
+            div>section>div{
+                width: 960px;
+                margin-left: auto;
+                margin-right: auto;
+                /* 가운데 정렬 */
+            }
+            header>h1>img{
+                width: 300px;
+            }
+            header>ul{
+                padding: 30px 0px; /* 안쪽여백 : 0px; */
+            }
+            #zoom{
+                padding: 50px 0px;
+            }
+            .img{
+                width: 480px;
+            }
+            .content_part{
+                width: 480px;
+                float: left; /* 둥둥떠다니도록 : 왼쪽기준 */
+                margin: auto;
+            }
+            footer{
+                background-color: #333;
+                color: #aaa; /* 글자색깔, 상속됨 */
+                padding: 20px 70px;
+            }
+            #navi_ul{
+                padding: 0px;
+            }
+            #navi_ul>li{
+                float: left;
+                list-style: none; /*목록모양(왼쪽 동그라미): 없음; */
+                padding: 0px 10px; /* 상하 좌우 */
+                border-right: solid 2px #aaa; /* 경계선 */
+            }
+            #navi_ul>li:nth-child(6){
+                border: none;
+            }
+            section{
+                padding: 50px 0px; /* 상하좌우 */
+            }
+            #icon_ul{
+                padding: 0px;
+                float: right;
+            }
+            #icon_ul>li{
+                float: left;
+                list-style: none; /*목록모양(왼쪽 동그라미): 없음; */
+                border-right: solid 2px #aaa; /* 경계선 */
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            #icon_ul>li:nth-child(2){
+                border: none;
+            }
+            #footer_left{
+                float: left;}
+            footer{
+            background-color: #333;
+            color: #aaa; /* 글자색깔, 상속됨 */
+            padding: 20px 70px;
+            }
+       </style>
+       <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <img src="images/freelayout_head_logo.JPG" />
+                </h1>
+                <ul class="float_left">
+                        <li>ABOUT</li>
+                        <li>SERVICES</li>
+                        <li>WORKS</li>
+                        <li>BLOG</li>
+                        <li>CONTACT US</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div id="zoom" class="float_right">
+                        <img src="images/layout1_head_zoom.jpg" />
+                    </div>
+                    <div class="clear"></div>
+            </header>
+            <nav>
+                <h2 class="float_left">chunhyang is a French bulldog</h2>
+                <ul class="float_right">
+                    <li>Cute</li>
+                    <li>Lovely</li>
+                    <li>Sleepy</li>
+                    <li>Her friend</li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+            <div>
+                <section>
+                    <div>
+                        <h3>Cute</h3>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img1.jpg" />
+                            <d1>
+                                <dt>She's wearing a red ribbon.</dt>
+                                <dd>She's wearing a ribbon around her neck. It looks stuffy, but it's so cute!</dd>
+                            </d1>
+                        </div>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img2.jpg" />
+                            <d1>
+                                <dt>Where are you looking?</dt>
+                                <dd>The harmony between the eyes that you don't know where you're looking and the tongue that's slightly out there maximizes your cuteness!</dd>
+                            </d1>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Lovely</h3>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img3.jpg" />
+                            <d1>
+                                <dt>You look very comfortable!</dt>
+                                <dd>Her cute body and sunlight blend together and she looks very lovely.</dd>
+                            </d1>
+                        </div>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img4.jpg" />
+                            <d1>
+                                <dt>Do you really want to eat chicken?</dt>
+                                <dd>Chunhyang really likes chicken. Isn't it lovely?</dd>
+                            </d1>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Sleepy</h3>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img5.jpg" />
+                            <d1>
+                                <dt>She sleeps next to me every day.</dt>
+                                <dd>I love to see her sleeping next to me.</dd>
+                            </d1>
+                        </div>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img6.jpg" />
+                            <d1>
+                                <dt>Sometimes she's too crazy.</dt>
+                                <dd>It's so funny and lovely to see her do the crazy thing.</dd>
+                            </d1>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Her friend</h3>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img7.jpg" />
+                            <d1>
+                                <dt>His name is Kangsan.</dt>
+                                <dd>Unlike her, his coat is white and he is a cat!</dd>
+                            </d1>
+                        </div>
+                        <div class="content_part">
+                            <img class="img" src="images/freelayout_img8.jpg" />
+                            <d1>
+                                <dt>These two are much closer than I thought!</dt>
+                                <dd>They're really close. They're so cute and happy to see them together.</dd>
+                            </d1>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                </section>
+            </div>
+                <footer>
+                    <div id="footer_left">
+                    <ul id="navi_ul">
+                        <li>Chunhyang</li>
+                        <li>french</li>
+                        <li>bulldog</li>
+                        <li>cute</li>
+                        <li>and</li>
+                        <li>lovely</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>@ All the information about Chunhyang</p>
+                    <p>All photos and information are from Downe's creation and are prohibited from copying.</p>
+                    </div>
+                    <ul id="icon_ul">
+                        <li>email : dounnnn1@naver.com</li>
+                        <li>insta : _dada224</li>
+                    </ul>
+                    <div class="clear"></div>
+                </footer>
+        </div>
+       </body>
    </head>
 </html>

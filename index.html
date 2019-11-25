@@ -1,21 +1,140 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>HTML Design</title>
+        <title>HTML index</title>
         <meta charset="utf-8" />
         <!--utf-8, euc-kr -->
-        <meta name="author" content="김다운" />
+        <style>
+        header{
+            padding: 20px 70px; /* 상하좌우 */
+        }
+        .float_left{ float: left;}
+        .float_right{ float: right;}
+        .clear{
+            clear: both; /* float을 해제한다 */
+            height: 0px; /* 높이 : 0px; */
+            overflow: hidden; /* 넘치면 : 숨김; */
+        }
+        header>ul{
+            padding: 0px; /* 안쪽여백 : 0px; */
+            margin: 20px
+        }
+        header>ul>li{
+            float: left; /* 둥둥떠다님 : 왼쪽기준*/
+            list-style: none; /*목록모양(왼쪽 동그라미): 없음; */
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: solid 2px gray;
+        }
+        header>ul>li:nth-child(5){
+            border: none; /* 경계선 없음의 의미 */
+        }
+        header>h1>img{
+                width: 300px;
+            }
+            header>ul{
+                padding: 30px 0px; /* 안쪽여백 : 0px; */
+            }
+            #zoom{
+                padding: 50px 0px;
+            }
+        #main_visual{
+            background-image: url("images/main_visual.jpg");
+            background-size: 100% auto;
+            background-size: cover; /* 표지처럼*/
+            background-repeat: no-repeat;  /*repeat, no-repeat, repeat-x, repeat-y*/
+            background-color: black;
+            background-position: 100% 100%;
+            color: white;
+            text-align: center;
+            padding: 300px 0px;  /* 상하좌우 */
+        }
+        #main_visual>a{
+           color: white; 
+        }
+        #icon_ul{
+            padding: 0px;
+            float: right;
+        }
+        #icon_ul>li{
+            float: left;
+            list-style: none; /*목록모양(왼쪽 동그라미): 없음; */
+            border-right: solid 2px #aaa; /* 경계선 */
+            padding: 0px 10px; /* 상하 좌우 */
+        }
+        #icon_ul>li:nth-child(2){
+            border: none;
+        }
+        #footer_left{
+            float: left;}
+
+        footer{
+            background-color: #333;
+            color: #aaa; /* 글자색깔, 상속됨 */
+            padding: 20px 70px;
+        }
+        #navi_ul{
+                padding: 0px;
+            }
+            #navi_ul>li{
+                float: left;
+                list-style: none; /*목록모양(왼쪽 동그라미): 없음; */
+                padding: 0px 10px; /* 상하 좌우 */
+                border-right: solid 2px #aaa; /* 경계선 */
+            }
+            #navi_ul>li:nth-child(6){
+                border: none;
+            }
+    </style>
     </head>
     <body>
+        <header>
+            <h1 class="float_left">
+                <img src="images/freelayout_head_logo.JPG" />
+            </h1>
+            <ul class="float_left">
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <div class="clear"></div>
+                </ul>
+                <div id="zoom" class="float_right">
+                    <img src="images/layout1_head_zoom.jpg" />
+                </div>
+                <div class="clear"></div>
+        </header>
+        <div id="main_visual">
         <a href="training_hd.html">HTML연습</a>
         <a href="html_part1_hd.html">자유주제</a>
         <a href="html5.html">미디어</a>
         <a href="form.html">회원가입양식</a>
         <a href="css_psrt1.html">css_part1</a>
-        <a href="layout1.html">layout1</a>
         <a href="css.html">css</a>
+        <a href="layout1.html">layout1</a>
         <a href="layout2.html">layout2</a>
         <a href="layout3.html">layout3</a>
+        </div>
     </body>
+    <footer>
+        <div id="footer_left">
+        <ul id="navi_ul">
+            <li>Chunhyang</li>
+            <li>french</li>
+            <li>bulldog</li>
+            <li>cute</li>
+            <li>and</li>
+            <li>lovely</li>
+            <div class="clear"></div>
+        </ul>
+        <p>@ All the information about Chunhyang</p>
+        <p>All photos and information are from Downe's creation and are prohibited from copying.</p>
+        </div>
+        <ul id="icon_ul">
+            <li>email : dounnnn1@naver.com</li>
+            <li>insta : _dada224</li>
+        </ul>
+        <div class="clear"></div>
+    </footer>
 </html>
-Hello world 2019222006 김다운
